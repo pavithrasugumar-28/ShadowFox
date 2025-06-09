@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pavithra Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #F2E9E4;
+      color: #22223B;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background-color: #9B95BF;
+      padding: 20px 0;
+      border-bottom: 1px solid #c2b9aa;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 100px;
+      color: #22223B;
+      text-align: center;
+      margin: 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #a0896d;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #4b3f33;
+      border-bottom: 1px solid #d1c7bb;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: #6e5849;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #eae4dc;
+      font-size: 0.9rem;
+      color: #5f5f5f;
+      border-top: 1px solid #d6cfc7;
+    }
+
+    /* Skill Bar */
+    .container1 {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      text-align: right;
+      padding: 10px;
+      color: white;
+      border-radius: 20px;
+    }
+
+    .html {width: 90%; background-color: #04AA6D;}
+    .css {width: 80%; background-color: #2196F3;}
+    .js {width: 65%; background-color: #f44336;}
+    .py {width: 60%; background-color: #808080;}
+    .powerbi {width: 90%; background-color: #04AA6D;}
+    .java {width: 80%; background-color: #2196F3;}
+    .cpp {width: 65%; background-color: #f44336;}
+    .ragai {width: 60%; background-color: #808080;}
+
+    /* Project Cards */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid #d8ccc0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #4b3f33;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #5a4b41;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #9B95BF;
+      color: white;
+      padding: 4px 8px;
+      margin: 5px 5px 0 0;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Pavithra Sugumar</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Welcome to my corner of the internet. I’m Pavithra, a tech enthusiast and creative soul blending elegance and intelligence through code and design. As a curious and ambitious Computer Science student, I am fueled by the desire to push boundaries and explore new possibilities through technology.
+      <br><br>
+      I believe in learning by doing, whether it's experimenting with emerging tech, diving into complex algorithms, or tinkering with new programming languages. Beyond the classroom, you’ll find me participating in hackathons, contributing to open-source projects, and working on side projects that stretch my creativity.
+      <br><br>
+      I'm trying to make my fun and head-turning ideas into reality. I'm still a work in progress, but I’m willing to work hard to achieve my goals.
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>🌡️ Temperature Converter</h3>
+        <p>A clean web app that converts temperatures between Celsius, Kelvin, and Fahrenheit.</p>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+
+      <div class="project-card">
+        <h3>🤖 Vinavi Chatbot</h3>
+        <p>A charming Tamil chatbot that understands Thanglish and regional slang. Built with love 💬</p>
+        <span class="tag">Python</span>
+        <span class="tag">NLP</span>
+        <span class="tag">Dialogflow</span>
+      </div>
+
+      <div class="project-card">
+        <h3>📚 Library System (C++)</h3>
+        <p>A console-based C++ program to organize and access books based on requirements.</p>
+        <span class="tag">C++</span>
+        <span class="tag">OOP</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <p>HTML</p>
+    <div class="container1"><div class="skills html">90%</div></div>
+
+    <p>CSS</p>
+    <div class="container1"><div class="skills css">80%</div></div>
+
+    <p>JavaScript</p>
+    <div class="container1"><div class="skills js">65%</div></div>
+
+    <p>Python</p>
+    <div class="container1"><div class="skills py">60%</div></div>
+
+    <p>Power BI</p>
+    <div class="container1"><div class="skills powerbi">90%</div></div>
+
+    <p>RAG AI</p>
+    <div class="container1"><div class="skills ragai">80%</div></div>
+
+    <p>C++</p>
+    <div class="container1"><div class="skills cpp">65%</div></div>
+
+    <p>Java</p>
+    <div class="container1"><div class="skills java">60%</div></div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: pavithrasugumar28@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pavithrasugumar" target="_blank">Pavithra Sugumar</a></p>
+    <p>GitHub: <a href="https://github.com/pavithrasugumar-28" target="_blank">pavithrasugumar-28</a></p>
+  </section>
+
+  <footer>
+    <p>Pavithra Sugumar</p>
+  </footer>
+</body>
+</html>
