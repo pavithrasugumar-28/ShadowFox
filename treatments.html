@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Treatments - Sakthi Dental Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+}
+.page-hero {
+  background: #fdf6ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.page-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.page-hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.treatment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 30px;
+}
+.treatment-card {
+  background: #fff;
+  border: 1px solid #e6d4ff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.treatment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3e8ff;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #663399;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #f3e8ff;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    padding: 10px;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+footer {
+  background: #f3e8ff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.treatment-card {
+  background: #fff;
+  border: 1px solid #e6d4ff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.treatment-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Sakthi Dental Clinic</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="treatments.html" class="active">Treatments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="faq.html" class="active">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Our Dental Treatments</h1>
+    <p>Discover personalized treatments backed by expert care and modern technology.</p>
+  </section>
+
+  <section class="treatment-list">
+    <div class="treatment-card">
+      <h3>Teeth Cleaning & Scaling</h3>
+      <img src="Teeth Cleaning.png" alt="Teeth cleaning">
+      <p>Laser-based non-surgical gum care to remove plaque and boost oral hygiene.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Dental Implants</h3>
+      <img src="Impants.png" alt="Implants">
+      <p>Permanent tooth replacements using titanium roots and natural-looking prosthetics.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Root Canal Therapy</h3>
+      <img src="Root Canal Treatment.png" alt="Root Canal Treatment">
+      <p>Treat deep infections by preserving your natural tooth and relieving pain.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Artificial Complete Denture</h3>
+      <img src="Artificial Complete Denture.png" alt="Artificial Complete Denture">
+      <p>Custom full-mouth replacements that restore confidence and function.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Orthodontic Braces & Aligners</h3>
+      <img src="Orthodonic-Treatment.png" alt="Orthodontic treatment">
+      <p>Straighten teeth with metal, ceramic, or clear aligners tailored to your needs.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Veneers</h3>
+      <img src="Veneer Treatment.jpg" alt="Veneer Treatment">
+      <p>Thin custom shells to mask imperfections and enhance your smile.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Pediatric Dentistry</h3>
+      <img src="Pediatric-dentistry.png" alt="Pediatric dentistry">
+      <p>Friendly and gentle dental care to help your little ones build healthy habits.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Wisdom Tooth Extraction</h3>
+      <img src="Wisdom Teeth Removal.png" alt="Wisdom teeth removal">
+      <p>Safe removal of impacted or painful wisdom teeth with full aftercare support.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Laser Dentistry</h3>
+      <img src="Laser-Surgery.png" alt="Laser Surgery">
+      <p>Minimally invasive treatments for precision gum care and soft-tissue procedures.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Fixed Partial Denture (Bridge)</h3>
+      <img src="Fixed Partial Denture.png" alt="Fixed partial denture">
+      <p>Expertly crafted fixed partial dentures offer a secure solution for replacing missing teeth by 
+      anchoring prosthetic teeth to adjacent natural teeth or implants. </p>
+    </div>
+    <div class="treatment-card">
+      <h3>Flap Surgery</h3>
+      <img src="Flap-surgery.png" alt="Flap Surgery">
+      <p>Lifting the gum tissue to remove deep-seated plaque and bacteria, then repositioning it for optimal healing.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Clear Aligners</h3>
+      <img src="Aligner.png" alt="Clear Aligners ">
+      <p>These transparent, removable trays gradually shift your teeth into perfect alignment, providing comfort and flexibility throughout your orthodontic     journey.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Teeth Cleaning & Scaling</h3>
+      <img src="Teeth Cleaning.png" alt="Teeth Cleaning & Scaling ">
+      <p>Scaling is advised for moderate cases to remove plaque and tartar buildup, while more severe periodontal issues may require deep cleaning procedures like root planing, supported by LASER treatment. </p>
+    </div>
+    <div class="treatment-card">
+      <h3>Tooth Filling </h3>
+      <img src="Tooth-Filling.jpg" alt="Tooth Filling">
+      <p>Whether tooth damage is caused by cavities, trauma, or wear from habits like teeth grinding or nail-biting, our team uses high-quality materials and the latest techniques to repair and protect your teeth.</p>
+    </div>
+    <div class="treatment-card">
+      <h3>Tooth Extraction</h3>
+      <img src="Teeth Extraction.png" alt="Tooth Extraction ">
+      <p>Our experienced dental team evaluates every option before recommending removal, but when necessary, we perform extractions using gentle techniques to minimize discomfort. </p>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <p>Need guidance on the right treatment for you?</p>
+    <a href="contact.html" class="btn">Talk to Our Experts</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sakthi Dental Clinic</p>
+    <p>info@sakthidentalclinic.in | +91 9862890897</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navbar ul').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

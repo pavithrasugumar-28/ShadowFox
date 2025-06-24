@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakthi Dental Clinic</title>
+  <meta name="description" content="Expert dental care for women and children at Sakthi Dental Clinic, Hosur. Book appointments, explore services, and more.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3e8ff;
+  padding: 10px 30px;
+  position: relative;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #f3e8ff;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    padding: 10px;
+  }
+  .navbar ul.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero */
+.hero-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  background: #fdf6ff;
+  padding: 60px 30px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.hero-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #e0aaff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.hero-buttons .secondary {
+  background: #d291ff;
+}
+
+/* Assurance */
+.assurance {
+  background: #f0f0ff;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.why-us, .services, .testimonials, .amenities {
+  padding: 40px 30px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Layouts */
+.reasons, .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+.service, .reason, .testimonial {
+  background: #f9f2ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Amenities */
+.amenities ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.amenities li {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  background: #f3e8ff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+.socials a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #663399;
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Sakthi Dental Clinic</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="faq.html" class="active">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Specialized Dental Care for Women, Children & Families</h1>
+      <img src="SDC Logo.png" alt="Logo" class="hero-image" />
+      <p>Experience compassionate, expert-led dental services tailored to your needs—all in a modern and welcoming environment.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn">Fix an Appointment</a>
+        <a href="contact.html" class="btn secondary">Emergency Dental Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assurance Banner -->
+  <section class="assurance">
+    <p>You are always in safe hands. We are ready to help, anytime.</p>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <h2>Why Choose Sakthi Dental Clinic?</h2>
+    <div class="reasons">
+      <div class="reason">🦷 All-in-One Care</div>
+      <div class="reason">👩‍⚕️ Experienced Doctors</div>
+      <div class="reason">💖 Patient-Centric Approach</div>
+      <div class="reason">⚙️ Technology-Driven Services</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Explore Our Services</h2>
+    <div class="service-grid">
+      <div class="service">Tooth Extraction</div>
+      <div class="service">Artificial Complete Denture</div>
+      <div class="service">Tooth Filling</div>
+      <div class="service">Teeth Cleaning</div>
+      <div class="service">Bleaching</div>
+      <div class="service">Orthodontic Treatment</div>
+    </div>
+    <a href="treatments.html" class="btn">View Full List of Treatments</a>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Patients Say</h2>
+    <div class="testimonial">“The doctors are extremely kind and attentive. My braces treatment is progressing really well. 5/5.” – Manisha M</div>
+    <div class="testimonial">“I got my teeth cleaned and whitened here, and the results were amazing.” — Mr. Arun Kumar</div>
+    <div class="testimonial">“Their attention to detail is outstanding. My daughter needed braces and the process has been so smooth.” — Mrs. Revathi S.</div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="amenities">
+    <h2>Clinic Facilities</h2>
+    <ul>
+      <li>📍 Convenient central location</li>
+      <li>🅿️ Hassle-free parking</li>
+      <li>🕘 Doctors available daily (9 AM – 9 PM)</li>
+      <li>🚗 Pickup & drop-off support</li>
+      <li>♿ Wheelchair access</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sakthi Dental Clinic</p>
+      <p>Contact: info@sakthidentalclinic.in | +91 9862890897</p>
+      <div class="socials">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for Navbar Toggle -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navbar ul').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
